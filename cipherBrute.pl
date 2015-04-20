@@ -24,11 +24,11 @@ my $usage = "\nUsage: " . "perl " . basename($0) . " [options]
 
         --help        Displays this usage message
 	--version     Displays current version of this program
-	--file	      Specify a file containing list of ips/hostnames 
+	--file	      Specify a file containing list of ips/hostnames with or without portnumbers (defaults to 443) 
 
         EXAMPLE COMMANDS:
 
-	perl cipherBrute.pl -f listofipaddresses.txt
+	perl cipherBrute.pl -f listofipaddressesorhosts.txt
 
 \n";
 
@@ -44,7 +44,7 @@ GetOptions(
 'version'       => sub { print $version; exit 0 },
 );
 
-die "\nIncorrect usage - Specify at least a file containing virtualhosts for the most basic functionality (see --help)\n\n" 
+die "\nIncorrect usage - Specify at least a file containing ips/hosts (see --help)\n\n" 
 unless (defined $file);
 
 ###########################################
@@ -79,7 +79,7 @@ while (1)
 sub anon_mainmenu {
 print color 'green';
 print "________________________________________________________\n\n";
-print "Bruteforce supported ciphers ....................... [1]\n";
+print "Bruteforce (full handshake) supported ciphers ...... [1]\n";
 print "SSL Certificate information ........................ [2]\n";
 print "[exit] .......................................... [EXIT]\n";
 print "\n[>] Enter option: ";
@@ -311,7 +311,7 @@ my $address = "$country, $locality, $state";
 colour($address);
 print "\n";
 
-###########################################
+##########################################
 
 print "\t |\n";
 
@@ -341,11 +341,14 @@ colour(" GMT\n");
 
 print "\t |\n";
 
-##########################################
+###########################################
 
 print "\tCertificate Serial Number: ";
-print "COMING VERY SOON";
-#colour($decoded->serial);
+my $data = ($decoded->serial);
+my $hex = sprintf("0x%x",$data);
+colour("$hex");
+my $uchexnonpadded = uc(sprintf("%x", $data));
+colour("  ($uchexnonpadded)");
 print "\n";
 
 ###########################################
@@ -409,4 +412,3 @@ print color 'reset';
 
 ###########################################
 #end
-
