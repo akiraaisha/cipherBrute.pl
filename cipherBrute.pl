@@ -253,7 +253,7 @@ if (index($vi, $substr) != -1) {
 
 if ($decoded->error) {
 
-	colour2("[-] Error Parsing Certificate - No certificate found for [$vi]\n\n\n\n"); #.$decoded->error;
+	colour2("\t[-] Error Parsing Certificate - No certificate found for [$vi]\n\n\n\n"); #.$decoded->error;
 	next;
 
 }
@@ -266,7 +266,7 @@ my $cn = ($decoded->subject_cn);
 my $wildcard = "*";
 unless (index($cn, $wildcard) == -1) {
 
-        colour2("[-] Wildcard Certificate in use - [$cn]\n");
+        colour2("\t[-] Wildcard Certificate in use - [$cn]\n");
 
 } #elsif ($vi ne $cn) {
 
@@ -279,7 +279,7 @@ unless (index($cn, $wildcard) == -1) {
 my $expiry = gmtime($decoded->not_after);
 if ($decoded->not_after < time()) {
 
-        colour("[-] Expired Certificate - Expired $expiry\n");
+        colour("\t[-] Expired Certificate - Expired $expiry\n");
 
 }
  
@@ -409,3 +409,4 @@ print color 'reset';
 
 ###########################################
 #end
+
