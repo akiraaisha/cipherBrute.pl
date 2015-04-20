@@ -80,7 +80,7 @@ sub anon_mainmenu {
 print color 'green';
 print "________________________________________________________\n\n";
 print "Bruteforce (full handshake) supported ciphers ...... [1]\n";
-print "SSL Certificate information ........................ [2]\n";
+print "Extract SSL Certificate information ................ [2]\n";
 print "[exit] .......................................... [EXIT]\n";
 print "\n[>] Enter option: ";
 print color 'reset';
