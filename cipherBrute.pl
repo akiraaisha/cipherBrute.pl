@@ -344,11 +344,12 @@ print "\t |\n";
 ###########################################
 
 print "\tCertificate Serial Number: ";
-my $data = ($decoded->serial);
-my $hex = sprintf("0x%x",$data);
-colour("$hex");
-my $uchexnonpadded = uc(sprintf("%x", $data));
-colour("  ($uchexnonpadded)");
+#my $data = ($decoded->serial);
+#my $hex = sprintf("0x%x",$data);
+#colour("$hex");
+#my $uchexnonpadded = uc(sprintf("%x", $data));
+#colour("  ($uchexnonpadded)");
+print "COMING VERY SOON";
 print "\n";
 
 ###########################################
