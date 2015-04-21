@@ -14,7 +14,7 @@ use Crypt::X509;
 use Term::ANSIColor;
 use File::Basename;
 #use List::MoreUtils qw(uniq);
-use NetAddr::IP;
+#use NetAddr::IP;
 use Net::IP;
 use Term::ANSIColor;
 
