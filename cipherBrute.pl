@@ -101,7 +101,7 @@ print "\n\n";
 }     #end of main menu
 
 ###########################################
-#getting screenshots
+#subs
 
 sub cipher_check {
 
