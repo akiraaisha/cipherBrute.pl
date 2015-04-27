@@ -221,7 +221,7 @@ if (index($vi, $substr) != -1) {
 	my ($viip, $pnumb) = split(":",$vi);
 	$derbinary = `echo -n | openssl s_client -connect $viip:$pnumb 2>/dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | openssl x509 -outform DER 2>/dev/null`;
 	
-	$vi = $viip; #so we can compare the subject cn with the vi (ie ip/virthost supplied)
+	#$vi = $viip; #so we can compare the subject cn with the vi (ie ip/virthost supplied)
 
 } else {
 
