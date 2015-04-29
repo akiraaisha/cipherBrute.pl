@@ -10,7 +10,7 @@ Note: This tool uses the installed version of OpenSSL on the machine from which 
 
 # How to use
 
-##### To check if hostnames/virtualhosts/domains are in scope
+##### To check what SSL/TLS cipher suites are supported
 
 `perl cipherBrute.pl -f lisofipaddressesorhostnames.txt`
 
