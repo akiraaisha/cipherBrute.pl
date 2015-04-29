@@ -1,10 +1,10 @@
 # cipherBrute.pl
 Bruteforce supported SSL/TLS cipher suites and extract SSL Certificate information
 
-*Note:* This tool uses the installed version of OpenSSL on the machine from which it is run as a basis for determining which cipher suites to test. This tool performs a full handshake in order to determine whether a cipher suite is supported much in the same way as the Nmap ssl-enum-ciphers script.
+**Note:** This tool uses the installed version of OpenSSL on the machine from which it is run as a basis for determining which cipher suites to test. This tool performs a full handshake in order to determine whether a cipher suite is supported much in the same way as the Nmap ssl-enum-ciphers script.
 
-*Note:* This tool will work perfectly when run from Kali, but requires one Perl module to be installed (Crypt::X509). 
-To install Crypt::X509 run the following command: *install Crypt::X509* 
+**Note:** This tool will work perfectly when run from Kali, but requires one Perl module to be installed (Crypt::X509). 
+To install Crypt::X509 run the following command: **cpanm install Crypt::X509** 
 
 # Why...?
 
