@@ -15,13 +15,13 @@ To install Crypt::X509 run the following command: **cpanm install Crypt::X509**
 
 ##### To check what SSL/TLS cipher suites are supported
 
-`perl cipherBrute.pl -f lisofipaddressesorhostnames.txt`
+`perl cipherBrute.pl -f lisofipsorhostnames.txt`
 
 # Example usage
 
 ##### To help demonstrate how this tool works and what it is useful for follow these steps:
 
-**1 -** Create a text file called **listofipaddressesorhostnames.txt** using your favourite editor (vi/pico/nano).  
+**1 -** Create a text file called **listofipsorhostnames.txt** using your favourite editor (vi/pico/nano).  
 **2 -** Copy and paste the following sample data into the new text file:
 
 ```
@@ -33,11 +33,11 @@ maps.yourdomaintotest.org.uk:4444
 ```
 **3 -** Run the following command and select option **1** at the menu:
 
-`perl cipherBrute.pl -f lisofipaddressesorhostnames.txt`
+`perl cipherBrute.pl -f lisofipsorhostnames.txt`
 
 **4 -** Alternatively, to extract useful SSL Certificate information (eg Valid from, Expires on...) run the following command and select option **2** at the menu:
 
-`perl cipherBrute.pl -f lisofipaddressesorhostnames.txt`
+`perl cipherBrute.pl -f lisofipsorhostnames.txt`
 
 
 
