@@ -18,7 +18,7 @@ Note: This tool uses the installed version of OpenSSL on the machine from which 
 
 ##### To help demonstrate how this tool works and what it is useful for follow these steps:
 
-**1 -** Create a text file called **listofhostnames.txt** using your favourite editor (vi/pico/nano).  
+**1 -** Create a text file called **listofipaddressesorhostnames.txt** using your favourite editor (vi/pico/nano).  
 **2 -** Copy and paste the following sample data into the new text file:
 
 ```
