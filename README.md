@@ -1,5 +1,5 @@
 # cipherBrute.pl
-Bruteforce supported SSL/TLS cipher suites and extract SSL Certificate information
+Bruteforce supported SSL/TLS cipher suites and extract useful SSL Certificate information
 
 **Note:** This tool uses the installed version of OpenSSL on the machine from which it is run as a basis for determining which cipher suites to test. This tool performs a full handshake in order to determine whether a cipher suite is supported much in the same way as the Nmap ssl-enum-ciphers script.
 
